@@ -32,7 +32,7 @@ function short()    {
         object[next_id] = target_url;
         xmlHttp.send(JSON.stringify(object));
         document.getElementById("result").href = "https://wanz772.github.io/url_shorterner#" + next_id;
-        document.getElementById("result").innerHTML = "Your Result";
+        document.getElementById("result").innerHTML = "https://wanz772.github.io/url_shorterner#" + next_id;
     return xmlHttp.responseText;
     }   catch (e)   {
         console.log(e);
@@ -49,7 +49,7 @@ function reroute()  {
         object[old_id] = new_url;
         xmlHttp.send(JSON.stringify(object));
         document.getElementById("result").href = "https://wanz772.github.io/url_shorterner#" + old_id;
-        document.getElementById("result").innerHTML = "Your Result";
+        document.getElementById("result").innerHTML = "https://wanz772.github.io/url_shorterner#" + old_id;
     return xmlHttp.responseText;
 }
 </script>
