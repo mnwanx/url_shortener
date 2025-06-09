@@ -5,7 +5,8 @@
 </head>
 <body>
   <script>
-    let database = "https://url-shorterner-d9c15-default-rtdb.asia-southeast1.firebasedatabase.app/urls.json";
+    alert("This project has been discontinued");
+    let database = "";
     id = window.location.href.split('#')[1];
     if (id != null)  {
         var xmlHttp = new XMLHttpRequest();
@@ -52,6 +53,9 @@ function reroute()  {
         document.getElementById("result").innerHTML = "https://wanz772.github.io/url_shorterner#" + old_id;
     return xmlHttp.responseText;
 }
+    function view_source()  {
+      location.href = "view-source:" + location.href;
+    }
 </script>
 <h1>Dynamic URL Shortener</h1>
 <p>Developed by Syntax Error.</p>
@@ -67,5 +71,6 @@ function reroute()  {
 <button onclick="reroute()">Reroute!</button>
 <br>
 <p><a href id="result"></a></p>
+  <p onclick="view_source()"><a>View Source Code</a>a></p>
 </body>
 </html>
