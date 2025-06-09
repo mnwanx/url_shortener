@@ -53,9 +53,7 @@ function reroute()  {
         document.getElementById("result").innerHTML = "https://wanz772.github.io/url_shorterner#" + old_id;
     return xmlHttp.responseText;
 }
-    function view_source()  {
-      location.href = "view-source:" + location.href;
-    }
+
 </script>
 <h1>Dynamic URL Shortener</h1>
 <p>Developed by Code</p>
@@ -71,6 +69,5 @@ function reroute()  {
 <button onclick="reroute()">Reroute!</button>
 <br>
 <p><a href id="result"></a></p>
-  <p onclick="view_source()"><a>View Source Code</a></p>
 </body>
 </html>
